@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Score = ({ name, score }) => {
+const Score = ({ name, score ,setScore }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -10,6 +10,10 @@ const Score = ({ name, score }) => {
     }
   }, []);
 
+  const HandleFinish =() => {
+    setScore(0);
+    navigate("/");
+  }
   return (
     <div className="flex flex-col items-center justify-evenly h-full">
       <h1 className="text-4xl text-white  p-4">
@@ -35,7 +39,7 @@ const Score = ({ name, score }) => {
         </div>
       </div>
       <div>
-        <button className="custom-btn" onClick={()=>navigate('/')}>Go To Home</button>
+        <button className="custom-btn" onClick={HandleFinish}>Go To Home</button>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ErrMessage from '../../Error/ErrMessage';
 import { useNavigate } from "react-router-dom";
 
-const Home = ({ name, setName, fetchQuestions}) => {
+const Home = ({ name, setName, fetchQuestions , setScore}) => {
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
 
@@ -13,6 +13,7 @@ const Home = ({ name, setName, fetchQuestions}) => {
       return;
     }
     else{
+      setScore(0);
       setErr(false);
       fetchQuestions();
       navigate('/quiz');
