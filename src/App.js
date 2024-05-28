@@ -21,9 +21,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='bg-purple-900 border-yellow-400 border-4 flex flex-col  h-screen '>
+      <div className='bg-purple-900 border-yellow-400 border-4 flex flex-col justify-between  min-h-screen w-full h-full '>
+        <div>
+
         <Header />
-        <div className='h-4/5'>
+        </div>
+        <div className='h-full flex-grow flex items-center justify-center '>
           <Routes>
             <Route path='/' element={
               <Home
@@ -43,10 +46,13 @@ function App() {
                 setScore={setScore}
               />
             } />
-            <Route path='/score' element={<Score name={name} score={score} setScore={setScore} />} />
+            <Route path='/score' element={<Score name={name} score={score} setScore={setScore}  />} />
           </Routes>
         </div>
+        <div className=' bottom-0 w-full'>
+
         <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );

@@ -20,7 +20,7 @@ const Home = ({ name, setName, fetchQuestions , setScore}) => {
     }
   };
   return (
-    <div className="flex flex-col items-center justify-evenly h-full custom-bg mx-8 border-r-2 border-l-2 border-yellow-400 ">
+    <div className="flex flex-grow flex-col items-center justify-evenly h-full min-h-[70vh]  custom-bg mx-8 border-r-2 border-l-2 border-yellow-400 ">
       <div>
         <h1 className="text-center text-white text-5xl drop-shadow-sm py-4  [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-yellow-500">
           It is a Reactjs based quiz Website.

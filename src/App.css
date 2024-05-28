@@ -7,9 +7,11 @@
 .custom-bg {
   background: url(../public/bg.jpg) !important;
   background-size: cover !important;
+  background-color: #581c87;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
+
 
 .custom-ip-field {
   appearance: none;

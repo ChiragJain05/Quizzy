@@ -32,13 +32,13 @@ const Quiz = ({ name, score, questions, setQuestions, setScore }) => {
   };
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="flex items-center justify-between mx-4 mt-2 py-4 px-4">
-        <h1 className="text-2xl  text-white border-b-2 border-yellow-400  ">
+    <div className="flex  flex-col h-full">
+      <div className="flex items-center justify-between mx-4 mt-2 py-2 sm:py-4 px-4">
+        <h1 className=" text-xl sm:text-3xl  text-white border-b-2 border-yellow-400  ">
           Welcome, <span className="text-yellow-400">{name}</span>
         </h1>
 
-        <h1 className="text-white">
+        <h1 className="text-white text-xl sm:text-3xl">
           Score : <span className="text-yellow-400"> {score}</span>
         </h1>
       </div>
